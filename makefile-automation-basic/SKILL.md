@@ -71,7 +71,7 @@ endif
 
 ### Install Git Hooks From Every Target
 
-Running any target in the Makefile should trigger the installation of a Python environment with the `pre-commit` library. This should be used to manage pre-commit hooks.
+Running any target in the Makefile should trigger the installation of a Python environment with the `pre-commit` library. This should be used to manage pre-commit hooks. Configuration for the pre-commit hooks are kept in a @.pre-commit-config.yaml file
 
 Automate git hook installation:
 ```makefile
