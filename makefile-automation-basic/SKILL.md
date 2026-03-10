@@ -45,6 +45,7 @@ TOOLS_BIN=$(TOOLS_HOME)/bin
 * Command line tools needed to perform tasks should be installed into a `.tools` directory in the local repository. You should never rely on the operating system, shared packages, or tools installed into "global" locations like `/usr/bin`.
 * Tool installation should be idempotent. Tools should be installed when needed and not be re-installed simply because they are used. Creating a make target for the path to the tool allows make to manage this process easily.
 * Tool versions should be specified in the Makefile, and the path that the tool is installed to should include the version, so that if the version changes in the Makefile, the new version is automatically installed.
+* The `.tools` directory should be added to a `.gitignore` file, so that the tools are not accidentally committed to git.
 
 ### Create Targets That Install Tools via `curl`
 
